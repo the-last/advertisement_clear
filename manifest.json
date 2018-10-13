@@ -1,0 +1,17 @@
+{  
+    "name": "kimoon",  
+    "manifest_version":2,
+    "version": "0.0.1",  
+    "description": "close Advertisement iframe",
+    "browser_action": {  
+      "default_icon": "icon.png" ,
+      "default_title": "kimoon",
+      "default_popup": "iframe_refuse.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://blog.csdn.net/*"],
+            "js": ["refuse_iframe.js"]
+        }
+    ]
+}
