@@ -10,7 +10,7 @@ setInterval(() => {
         arr_clear_2.push(document.getElementById('note-fixed-ad-container'))
     }
     if (window.location.hostname === 'www.runoob.com') {
-        arr_clear_3.push(document.getElementById('google_center_div'))
+        arr_clear_3.push(document.getElementById('sidebar-right-ads'))
     }
     var arr = [...arr_clear, ...arr_clear_2, ...arr_clear_3]
 
