@@ -10,7 +10,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://blog.csdn.net/*", "https://www.jianshu.com/*"],
+            "matches": ["https://blog.csdn.net/*", "https://www.jianshu.com/*", "http://www.runoob.com/*", "https://www.runoob.com/*"],
             "js": ["refuse_iframe.js"]
         }
     ]

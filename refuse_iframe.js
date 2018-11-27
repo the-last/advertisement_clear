@@ -1,5 +1,5 @@
 setInterval(() => {
-    var arr_clear = [], arr_clear_2 = []
+    var arr_clear = [], arr_clear_2 = [], arr_clear_3 = []
     if (window.location.hostname === 'blog.csdn.net') {
         document.getElementsByClassName('pulllog-box')[0].setAttribute('style', 'display:none');
         arr_clear = arr_clear.concat([].__proto__.slice.call(document.querySelectorAll('iframe')))
@@ -9,8 +9,11 @@ setInterval(() => {
     if (window.location.hostname === 'www.jianshu.com') {
         arr_clear_2.push(document.getElementById('note-fixed-ad-container'))
     }
-    var arr = [...arr_clear, ...arr_clear_2]
-    console.log()
+    if (window.location.hostname === 'www.runoob.com') {
+        arr_clear_3.push(document.getElementById('google_center_div'))
+    }
+    var arr = [...arr_clear, ...arr_clear_2, ...arr_clear_3]
+
     arr.forEach(i => i.setAttribute('style', 'display: none'))
 
 }, 2000)
